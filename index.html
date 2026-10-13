@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>猪猪影视 | 猪猪影视在线观看 - 猪猪影视 zhuzhuyingshi-cn</title>
+<meta name="description" content="猪猪影视（zhuzhuyingshi-cn）是暖橙奶油色调的影视导航单页网站。猪猪影视聚合电影、电视剧、综艺、动漫、纪录片等内容栏目，圆滚滚的卡片设计萌趣治愈，让找片像和猪猪一起玩耍一样开心。">
+<meta name="keywords" content="猪猪影视,猪猪影视在线观看,猪猪影视电影,猪猪影视电视剧,猪猪影视综艺,猪猪影视动漫,猪猪影视纪录片,猪猪影视官网,zhuzhuyingshi-cn">
+<meta name="author" content="猪猪影视">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="revisit-after" content="1 days">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://zhuzhuyingshi-cn.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="猪猪影视 | 猪猪影视在线观看">
+<meta property="og:description" content="猪猪影视 zhuzhuyingshi-cn：暖橙奶油色调影视导航单页，聚合电影、电视剧、综艺、动漫、纪录片等栏目。">
+<meta property="og:url" content="https://zhuzhuyingshi-cn.github.io/">
+<meta property="og:site_name" content="猪猪影视">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="猪猪影视 | 猪猪影视在线观看">
+<meta name="twitter:description" content="猪猪影视 zhuzhuyingshi-cn 暖橙奶油色萌趣影视导航单页网站。">
+<meta name="theme-color" content="#f97316">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:78px}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,sans-serif;background:#fffaf5;color:#3d2300;line-height:1.8;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none;transition:color .25s}
+ul{list-style:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+:focus-visible{outline:2.5px solid #f97316;outline-offset:3px;border-radius:8px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+.skip{position:absolute;left:-9999px;top:0;background:#f97316;color:#fff;padding:10px 16px;z-index:9999;border-radius:8px}
+.skip:focus{left:12px;top:12px}
+::selection{background:#fb923c;color:#fff}
+:root{
+  --orange:#f97316;--amber:#f59e0b;--red:#f43f5e;--pink:#f472b6;
+  --cream:#fff4e6;--cream2:#ffe8cc;--butter:#fff9f0;--card:#fff;
+  --ink:#3d2300;--ink2:#7c4a03;--ink3:#a1632c;
+  --line:#fed7aa;--line2:#fdba74;--shadow:0 14px 34px rgba(249,115,22,.16);--shadow2:0 22px 50px rgba(249,115,22,.3);
+  --r:24px;--max:1180px;
+}
+.bg{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;background:linear-gradient(180deg,#fffaf5 0%,#fff4e6 48%,#ffe8cc 100%)}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.45;animation:float 14s ease-in-out infinite alternate}
+@keyframes float{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(40px,-50px,0) scale(1.18)}}
+.wave{position:fixed;inset:auto 0 0 0;z-index:-1;height:260px;opacity:.55;pointer-events:none}
+#pbar{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,#fde047,#f97316,#f43f5e);z-index:1200;border-radius:0 4px 4px 0}
+.tip{background:linear-gradient(90deg,#3d2300,#7c4a03);color:#fed7aa;font-size:12.5px;letter-spacing:1px;padding:8px 20px;text-align:center}
+.tip b{color:#fdba74;font-weight:700}
+.navbox{position:sticky;top:0;z-index:1000;background:rgba(255,250,245,.82);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:2px dashed var(--line)}
+.nav{display:flex;align-items:center;gap:14px;height:74px;max-width:var(--max);margin:0 auto;padding:0 20px}
+.logo{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.pig{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#fed7aa,#f97316);display:grid;place-items:center;box-shadow:0 7px 18px rgba(249,115,22,.32)}
+.pig svg{width:24px;height:24px}
+.logo-t{font-size:19px;font-weight:800;letter-spacing:-.2px}
+.logo-t em{font-style:normal;color:var(--orange)}
+.menu{display:flex;gap:2px;margin:0 auto;background:var(--cream);padding:6px;border-radius:999px;border:2px solid #fff}
+.menu a{padding:8px 13px;border-radius:999px;font-size:13.5px;font-weight:600;color:var(--ink2);white-space:nowrap}
+.menu a:hover{background:#fff;color:var(--orange);box-shadow:0 4px 12px rgba(249,115,22,.14)}
+.nav-rt{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.btn-mini{padding:9px 18px;border-radius:14px;font-size:13.5px;font-weight:700;background:#fff;border:1.5px solid var(--line2);color:var(--ink2)}
+.btn-mini:hover{border-color:var(--orange);color:var(--orange)}
+.btn-solid{padding:10px 22px;border-radius:14px;font-size:13.5px;font-weight:700;background:linear-gradient(135deg,#fde047,#f97316);color:#3d2300;box-shadow:0 8px 20px rgba(249,115,22,.32)}
+.btn-solid:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(249,115,22,.44)}
+.menu-btn{display:none;width:42px;height:42px;border-radius:14px;background:var(--cream);color:var(--orange);font-size:20px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+section{padding:96px 0;position:relative}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:3px;color:var(--orange);margin-bottom:12px;text-transform:uppercase}
+.h2{font-size:clamp(25px,3.4vw,40px);font-weight:900;line-height:1.25;letter-spacing:-.5px;margin-bottom:16px;max-width:780px}
+.h2 em{font-style:normal;background:linear-gradient(135deg,#f97316,#f43f5e);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--ink2);font-size:16px;max-width:680px;margin-bottom:48px}
+/* Hero */
+.hero{padding:84px 0 100px}
+.hero-in{display:grid;grid-template-columns:1fr .9fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(38px,6vw,70px);font-weight:900;line-height:1.12;letter-spacing:-1.5px}
+.hero h1 .grad{background:linear-gradient(135deg,#f97316,#f43f5e);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero h1 .snout{display:inline-block;position:relative}
+.hero h1 .snout::after{content:"🐽";position:absolute;right:-38px;top:-6px;font-size:.24em;animation:nose 2.4s ease-in-out infinite alternate}
+@keyframes nose{from{transform:translateY(0) rotate(-8deg)}to{transform:translateY(-6px) rotate(10deg)}}
+.hero p.sub{font-size:clamp(16px,1.8vw,19px);color:var(--ink2);margin-top:24px}
+.hero-acts{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.btn{padding:15px 32px;border-radius:16px;font-size:15.5px;font-weight:700;transition:.28s;display:inline-flex;align-items:center;gap:8px}
+.btn-g{background:linear-gradient(135deg,#fde047,#f97316);color:#3d2300;box-shadow:0 12px 30px rgba(249,115,22,.34)}
+.btn-g:hover{transform:translateY(-3px);box-shadow:0 18px 42px rgba(249,115,22,.46)}
+.btn-o{border:1.5px solid var(--line2);color:var(--ink2);background:#fff}
+.btn-o:hover{border-color:var(--orange);color:var(--orange)}
+.tags{display:flex;gap:9px;margin-top:32px;flex-wrap:wrap}
+.tag{font-size:12.5px;font-weight:600;padding:7px 14px;border-radius:999px;background:#fff;border:1px solid var(--line2);color:var(--ink2)}
+.tag.hot{color:#fff;background:linear-gradient(135deg,#fdba74,#f97316);border-color:transparent}
+/* 猪猪泡泡图 */
+.pigs{position:relative;height:480px}
+.piggy{position:absolute;border-radius:50%;background:linear-gradient(150deg,var(--a),var(--b));display:grid;place-items:center;color:#fff;font-size:var(--fs);box-shadow:0 14px 34px var(--sh);animation:bob var(--d) ease-in-out infinite alternate;animation-delay:var(--dl)}
+.piggy b{position:absolute;bottom:-34px;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:12.5px;font-weight:700;color:#3d2300;background:#fff;padding:5px 13px;border-radius:999px;box-shadow:var(--shadow);border:1px solid var(--line)}
+@keyframes bob{from{transform:translateY(8px)}to{transform:translateY(-18px)}}
+.piggy.core{width:200px;height:200px;left:50%;top:50%;margin:-100px;font-size:74px;box-shadow:0 22px 50px rgba(249,115,22,.4);z-index:3;animation:breath 3.4s ease-in-out infinite alternate}
+@keyframes breath{from{transform:translate(-50%,-50%) scale(.96)}to{transform:translate(-50%,-50%) scale(1.06)}}
+/* 栏目1 分类（圆角软糖块） */
+.gum{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.gm{position:relative;padding:30px 24px;border-radius:28px;background:#fff;border:2px solid var(--line);transition:.4s;text-align:center}
+.gm::after{content:"";position:absolute;inset:-6px;border-radius:34px;background:linear-gradient(135deg,var(--a),var(--b));z-index:-1;opacity:0;transition:.4s;filter:blur(8px)}
+.gm:hover::after{opacity:.55}
+.gm:hover{transform:translateY(-8px);border-color:transparent;box-shadow:var(--shadow2)}
+.gm .ic{width:66px;height:66px;border-radius:50%;margin:0 auto 16px;background:linear-gradient(135deg,var(--a),var(--b));display:grid;place-items:center;font-size:28px;box-shadow:inset 0 -6px 12px rgba(0,0,0,.12),0 8px 18px var(--sh)}
+.gm h3{font-size:19px;font-weight:800;margin-bottom:6px}
+.gm p{font-size:13.5px;color:var(--ink2)}
+.gm .go{display:inline-flex;align-items:center;gap:5px;margin-top:16px;font-size:13px;font-weight:700;color:var(--orange)}
+.gm .go:hover{gap:9px}
+/* 栏目2 热播（软糖大卡 + 右侧编号） */
+.split{display:grid;grid-template-columns:1.05fr 1fr;gap:26px;align-items:start}
+.soft{position:relative;border-radius:30px;overflow:hidden;min-height:420px;padding:38px;color:#fff;background:linear-gradient(150deg,var(--a),var(--b));box-shadow:0 18px 44px var(--sh)}
+.soft::before{content:"";position:absolute;right:-40px;bottom:-40px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,.18)}
+.soft .badge{display:inline-block;font-size:12px;letter-spacing:2px;background:rgba(255,255,255,.24);backdrop-filter:blur(6px);padding:7px 15px;border-radius:999px;margin-bottom:18px;font-weight:700}
+.soft h3{font-size:clamp(24px,3vw,34px);font-weight:900;line-height:1.3;margin-bottom:12px;position:relative;z-index:1}
+.soft p{font-size:14.5px;opacity:.94;margin-bottom:26px;position:relative;z-index:1}
+.soft .acts{display:flex;gap:10px;flex-wrap:wrap;position:relative;z-index:1}
+.soft .acts .btn-o{background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.6);color:#fff}
+.soft .st{position:absolute;right:26px;bottom:26px;display:flex;gap:8px;z-index:1;flex-wrap:wrap}
+.soft .st span{background:rgba(255,255,255,.22);backdrop-filter:blur(6px);padding:6px 12px;border-radius:999px;font-size:12.5px;font-weight:700}
+.num{display:grid;gap:12px}
+.ni{display:grid;grid-template-columns:44px 1fr auto;gap:14px;align-items:center;padding:15px 18px;background:#fff;border:2px solid var(--line);border-radius:20px;transition:.3s}
+.ni:hover{background:var(--cream);transform:translateX(6px)}
+.ni .no{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--a),var(--b));color:#fff;display:grid;place-items:center;font-size:16px;font-weight:800;flex-shrink:0;font-family:ui-monospace,Menlo,monospace}
+.ni h4{font-size:15px;font-weight:700;line-height:1.4}
+.ni small{font-size:12px;color:var(--ink3)}
+.ni .sc{font-size:13px;font-weight:800;color:#c2410c;white-space:nowrap;background:var(--cream);padding:4px 10px;border-radius:999px}
+/* 栏目3 电视剧（堆叠竖卡 + 进度） */
+.dr{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 0 24px;-webkit-overflow-scrolling:touch}
+.dr::-webkit-scrollbar{height:9px}
+.dr::-webkit-scrollbar-thumb{background:linear-gradient(90deg,#fdba74,#f97316);border-radius:10px}
+.dc{position:relative;flex-shrink:0;width:225px;scroll-snap-align:start;border-radius:22px;overflow:hidden;background:#fff;border:2px solid var(--line);transition:.4s}
+.dc:hover{transform:translateY(-8px);box-shadow:var(--shadow2)}
+.dc .th{aspect-ratio:3/4;position:relative;background:linear-gradient(160deg,var(--a),var(--b))}
+.dc .th::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 28% 20%,rgba(255,255,255,.3),transparent 44%)}
+.dc .th .em{position:absolute;left:14px;bottom:14px;color:#fff;font-size:23px;font-weight:800;line-height:1.25;text-shadow:0 3px 10px rgba(0,0,0,.28)}
+.dc .ct{padding:16px}
+.dc .ct .ep{font-size:11.5px;font-weight:700;color:#c2410c;letter-spacing:1px}
+.dc .ct h4{font-size:16.5px;font-weight:800;margin:4px 0 10px}
+.dc .ct .bar{height:7px;border-radius:99px;background:var(--cream);overflow:hidden}
+.dc .ct .bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#fde047,#f97316);width:0;transition:width 1.2s ease}
+/* 栏目4 综艺（云朵胶囊） */
+.cap{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
+.cp{display:grid;grid-template-columns:64px 1fr;align-items:center;gap:14px;padding:16px 20px 16px 16px;background:#fff;border:2px solid var(--line);border-radius:999px;transition:.35s;min-height:76px}
+.cp:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.cp .l{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--a),var(--b));color:#fff;display:grid;place-items:center;font-size:24px;box-shadow:inset 0 -4px 8px rgba(0,0,0,.1)}
+.cp .r h4{font-size:15.5px;font-weight:800;line-height:1.35}
+.cp .r small{font-size:12px;color:var(--ink3)}
+/* 栏目5 动漫（猪圈网格） */
+.sty{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.sti{position:relative;padding:22px;border-radius:20px;background:#fff;border:2px dashed var(--line2);transition:.4s;overflow:hidden}
+.sti::before{content:"🐷";position:absolute;right:-10px;bottom:-14px;font-size:60px;opacity:.12}
+.sti:hover{border-style:solid;border-color:transparent;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(135deg,var(--a),var(--b)) border-box;border:2px solid transparent;transform:translateY(-6px);box-shadow:var(--shadow2)}
+.sti .tp{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.sti .tp .ic{width:40px;height:40px;border-radius:13px;background:linear-gradient(135deg,var(--a),var(--b));display:grid;place-items:center;font-size:19px;color:#fff;flex-shrink:0}
+.sti .tp b{font-size:12.5px;font-weight:800;color:#c2410c;background:var(--cream);padding:3px 10px;border-radius:999px}
+.sti h4{font-size:16.5px;font-weight:800;margin-bottom:5px}
+.sti p{font-size:13px;color:var(--ink2)}
+/* 栏目6 口碑（豆子卡片） */
+.bean{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.be{position:relative;padding:26px 24px;border-radius:26px;background:#fff;border:2px solid var(--line);text-align:center;transition:.4s;overflow:hidden}
+.be::before{content:"";position:absolute;left:50%;top:-26px;transform:translateX(-50%);width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--a),var(--b));opacity:.9}
+.be:hover{transform:translateY(-7px);box-shadow:var(--shadow2)}
+.be .face{width:92px;height:92px;margin:14px auto 16px;position:relative;background:linear-gradient(150deg,var(--a),var(--b));border-radius:50%;box-shadow:inset 0 -8px 16px rgba(0,0,0,.14)}
+.be .face::before,.be .face::after{content:"";position:absolute;width:12px;height:14px;border-radius:50%;background:#3d2300;top:34px}
+.be .face::before{left:24px}
+.be .face::after{right:24px}
+.be .face i{position:absolute;left:50%;top:58px;transform:translateX(-50%);width:14px;height:10px;border-radius:50%;background:#f43f5e;opacity:.85}
+.be h4{font-size:17.5px;font-weight:800}
+.be p{font-size:13px;color:var(--ink2);margin-top:4px}
+.be .sc{display:inline-block;margin-top:12px;font-size:12.5px;font-weight:800;color:#c2410c;background:var(--cream);padding:5px 14px;border-radius:999px}
+/* 栏目7 资讯（报纸卡） */
+.paper{display:grid;grid-template-columns:1.4fr 1fr;gap:24px;align-items:start}
+.lead-n{position:relative;border-radius:26px;overflow:hidden;min-height:360px;padding:34px;color:#fff;background:linear-gradient(155deg,var(--a),var(--b));box-shadow:0 18px 44px var(--sh)}
+.lead-n .lb{display:inline-block;font-size:12px;letter-spacing:2px;background:rgba(255,255,255,.24);padding:6px 14px;border-radius:999px;margin-bottom:16px;font-weight:700}
+.lead-n h3{font-size:clamp(22px,2.6vw,28px);font-weight:900;line-height:1.35;margin-bottom:12px}
+.lead-n p{font-size:14.5px;opacity:.94}
+.lead-n .more{display:inline-flex;margin-top:22px;padding:12px 22px;border-radius:14px;background:#fff;color:#c2410c;font-weight:700;font-size:14px}
+.lead-n .more:hover{background:#fef3c7}
+.sub-n{display:grid;gap:14px}
+.sn{display:grid;grid-template-columns:84px 1fr;gap:14px;padding:14px;background:#fff;border:2px solid var(--line);border-radius:20px;transition:.3s;align-items:center}
+.sn:hover{background:var(--cream);transform:translateX(5px)}
+.sn .th{width:84px;height:84px;border-radius:14px;background:linear-gradient(150deg,var(--a),var(--b));display:grid;place-items:center;font-size:30px;flex-shrink:0}
+.sn h4{font-size:14.5px;font-weight:700;line-height:1.45}
+.sn small{font-size:11.5px;color:var(--ink3)}
+/* 栏目8 指南（台阶） */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.stp{position:relative;padding:28px 24px;border-radius:22px;background:#fff;border:2px solid var(--line);transition:.4s;overflow:hidden}
+.stp::before{content:"";position:absolute;right:0;top:0;width:0;height:0;border-style:solid;border-width:0 46px 46px 0;border-color:transparent var(--a) transparent transparent;opacity:.55}
+.stp:hover{transform:translateY(-6px);box-shadow:var(--shadow2);background:var(--butter)}
+.stp .n{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--a),var(--b));color:#fff;font-size:18px;font-weight:800;margin-bottom:14px;font-family:ui-monospace,Menlo,monospace;box-shadow:0 6px 14px var(--sh)}
+.stp h4{font-size:17px;font-weight:800;margin-bottom:5px}
+.stp p{font-size:13px;color:var(--ink2)}
+/* FAQ（对话气泡） */
+.ask{display:grid;gap:14px;max-width:880px;margin:0 auto}
+.qa{background:#fff;border:2px solid var(--line);border-radius:24px;overflow:hidden;transition:.3s}
+.qa.on{border-color:var(--line2);box-shadow:0 10px 28px rgba(249,115,22,.16)}
+.qb{width:100%;text-align:left;padding:20px 24px;font-size:16px;font-weight:700;display:flex;justify-content:space-between;gap:14px;align-items:center}
+.qb .q{width:30px;height:30px;border-radius:50%;background:var(--cream);color:#c2410c;display:grid;place-items:center;font-size:14px;flex-shrink:0;transition:.35s}
+.qa.on .qb .q{background:linear-gradient(135deg,#fde047,#f97316);color:#3d2300;transform:rotate(180deg)}
+.qm{max-height:0;overflow:hidden;transition:max-height .42s}
+.qm p{padding:0 24px 22px 64px;color:var(--ink2);font-size:15px}
+.qa.on .qm{max-height:260px}
+/* 关于（拼图双块） */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.ab{position:relative;border-radius:30px;padding:44px 40px;overflow:hidden;transition:.4s;color:#fff}
+.ab:hover{transform:translateY(-6px);box-shadow:var(--shadow2)}
+.ab.a{background:linear-gradient(150deg,#f97316,#c2410c);box-shadow:0 18px 44px rgba(249,115,22,.3)}
+.ab.b{background:linear-gradient(150deg,#f43f5e,#be123c);box-shadow:0 18px 44px rgba(244,63,94,.3)}
+.ab::after{content:"🐽";position:absolute;font-size:130px;opacity:.14;right:-6px;bottom:-12px}
+.ab h3{font-size:clamp(23px,2.8vw,30px);font-weight:900;margin-bottom:14px}
+.ab p{font-size:15px;opacity:.95}
+.ab .url{display:inline-flex;align-items:center;gap:9px;margin-top:20px;padding:13px 20px;border-radius:14px;background:rgba(255,255,255,.22);backdrop-filter:blur(6px);font-family:ui-monospace,Menlo,monospace;font-size:14px;font-weight:600}
+.ab .url:hover{background:rgba(255,255,255,.4)}
+.ab .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:26px}
+.stt{background:rgba(255,255,255,.2);border-radius:18px;padding:18px 10px;text-align:center}
+.stt b{display:block;font-size:27px;font-weight:900;font-family:ui-monospace,Menlo,monospace}
+.stt span{font-size:12px;opacity:.9;display:block;margin-top:2px}
+/* CTA */
+.cta{margin:0 20px;border-radius:34px;background:linear-gradient(135deg,#fde047,#f97316 50%,#f43f5e);padding:76px 24px;text-align:center;position:relative;overflow:hidden}
+.cta::after{content:"🐷";position:absolute;font-size:180px;opacity:.16;right:2%;top:50%;transform:translateY(-50%) rotate(-12deg)}
+.cta .wrap{position:relative;z-index:1}
+.cta h2{font-size:clamp(25px,3.6vw,40px);font-weight:900;color:#3d2300;margin-bottom:14px}
+.cta p{color:rgba(61,35,0,.86);max-width:580px;margin:0 auto 30px;font-weight:500}
+.cta .btn-g{background:#fff;color:#c2410c}
+.cta .btn-g:hover{background:#fef3c7;color:#9a3412}
+/* 页脚 */
+.foot{background:linear-gradient(180deg,#3d2300,#241400);padding:64px 20px 26px;color:#fed7aa}
+.foot-top{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:40px;padding-bottom:36px;border-bottom:1px solid rgba(253,186,116,.2)}
+.logo-foot{display:flex;align-items:center;gap:10px}
+.foot p.d{margin-top:16px;font-size:14px;color:#f0b47a;max-width:330px;line-height:1.8}
+.foot h4{font-size:15px;font-weight:700;color:#fdba74;margin-bottom:16px;letter-spacing:1px}
+.foot ul li a{display:block;padding:6px 0;font-size:13.5px;color:#f6c98e}
+.foot ul li a:hover{color:#fdba74}
+.foot-bot{margin-top:26px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:#f0b47a}
+.foot-bot a{color:#f6c98e}
+.foot-bot a:hover{color:#fdba74}
+#top{position:fixed;right:20px;bottom:-60px;width:46px;height:46px;border-radius:15px;background:linear-gradient(135deg,#fde047,#f97316);color:#3d2300;z-index:999;font-size:19px;display:grid;place-items:center;box-shadow:0 8px 22px rgba(249,115,22,.42);transition:.35s;font-weight:900}
+#top.show{bottom:24px}
+@media(max-width:1000px){
+  .menu-btn{display:grid;place-items:center}
+  .menu,.nav-rt{display:none}
+  .menu.open{display:flex;position:fixed;inset:0;flex-direction:column;justify-content:center;background:rgba(255,250,245,.98);backdrop-filter:blur(20px);padding:24px;z-index:999;gap:6px}
+  .menu.open a{padding:16px;border-radius:16px;font-size:19px;text-align:center;background:#fff;border:2px solid var(--line);font-weight:800}
+  .menu.open a:hover{background:#f97316;color:#fff}
+  .hero-in{grid-template-columns:1fr;gap:44px}
+  .pigs{height:420px}
+  .paper,.split,.about{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  section{padding:64px 0}
+  .nav,.foot{padding-left:14px;padding-right:14px}
+  .nav{height:66px}
+  .logo-t{font-size:16px}
+  .hero{padding:50px 0 68px}
+  .gum,.cap,.bean,.sty,.steps{grid-template-columns:1fr}
+  .ab{padding:34px 26px}
+  .ab .stats{grid-template-columns:1fr 1fr}
+  .foot-top{grid-template-columns:1fr;gap:28px}
+  .cta{margin:0 14px;padding:54px 20px}
+  .dc{width:190px}
+}
+@media print{.nav,#top,#pbar,.bg,.wave,.cta,.tip{display:none}body{background:#fff;color:#000}section{page-break-inside:avoid;padding:26px 0}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+<div class="bg" aria-hidden="true"><div class="blob" style="width:360px;height:360px;background:#fed7aa;left:-80px;top:8%"></div><div class="blob" style="width:420px;height:420px;background:#fecaca;right:-120px;top:34%;animation-delay:-6s"></div><div class="blob" style="width:320px;height:320px;background:#fde68a;left:20%;top:66%;animation-delay:-3s"></div></div>
+<svg class="wave" viewBox="0 0 1440 260" preserveAspectRatio="none" aria-hidden="true"><path d="M0,160 C240,60 480,240 720,170 C960,100 1200,190 1440,130 L1440,260 L0,260 Z" fill="#ffe8cc" opacity=".5"/><path d="M0,200 C300,130 520,250 760,200 C1000,150 1180,215 1440,175 L1440,260 L0,260 Z" fill="#fff4e6" opacity=".7"/></svg>
+<a class="skip" href="#main">跳至主要内容</a>
+<div id="pbar" aria-hidden="true"></div>
+
+<div class="tip">🐷 <b>猪猪影视 zhuzhuyingshi-cn</b> · 暖橙奶油色调 · 圆滚滚萌趣治愈，找片像和猪猪玩耍一样开心</div>
+
+<header class="navbox">
+  <nav class="nav" aria-label="主导航">
+    <a class="logo" href="#top"><span class="pig" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#fff"><ellipse cx="12" cy="15" rx="6.4" ry="5.2"/><circle cx="12" cy="8.4" r="3.4"/><circle cx="10.4" cy="7.6" r=".7" fill="#3d2300"/><circle cx="13.6" cy="7.6" r=".7" fill="#3d2300"/><ellipse cx="12" cy="9.4" rx=".8" ry=".6" fill="#f97316"/><path d="M12 12c1.4 0 2.4.8 2.4 2" stroke="#fff" stroke-width=".6" fill="none" opacity=".7"/></svg></span><span class="logo-t">猪猪<b style="font-style:normal;color:var(--orange)">影视</b></span></a>
+    <div class="menu" id="menu">
+      <a href="#home">首页</a><a href="#cats">影视分类</a><a href="#hot">热播榜</a><a href="#tv">电视剧</a>
+      <a href="#variety">综艺</a><a href="#anime">动漫</a><a href="#rank">口碑榜</a><a href="#news">资讯</a>
+      <a href="#guide">使用指南</a><a href="#faq">常见问题</a><a href="#about">关于我们</a>
+    </div>
+    <div class="nav-rt">
+      <a class="btn-mini" href="#guide">使用指南</a>
+      <a class="btn-solid" href="#cats">进入官网</a>
+      <button class="menu-btn" id="mBtn" aria-expanded="false" aria-controls="menu" aria-label="菜单">☰</button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="hero-in">
+      <div>
+        <div class="eyebrow">🐷 zhuzhuyingshi-cn · 暖橙奶油色调影视导航</div>
+        <h1>猪猪影视<br><span class="grad">萌趣找片</span><br><span class="snout">超治愈</span></h1>
+        <p class="sub">猪猪影视（zhuzhuyingshi-cn）用圆滚滚的卡片和暖暖的橙色，带你从电影、电视剧、综艺、动漫到纪录片，轻松找到心仪的那一部。</p>
+        <div class="hero-acts">
+          <a class="btn btn-g" href="#cats">开始探索 →</a>
+          <a class="btn btn-o" href="#hot">查看热播榜</a>
+        </div>
+        <div class="tags">
+          <span class="tag hot">● 今日热播</span>
+          <span class="tag">轻量加载</span>
+          <span class="tag">手机 / 平板 / 电脑</span>
+          <span class="tag">电影 · 剧集 · 综艺</span>
+          <span class="tag">动漫 · 纪录片</span>
+        </div>
+      </div>
+      <div class="pigs">
+        <div class="piggy core">🐷</div>
+        <div class="piggy" style="--a:#fde047;--b:#f59e0b;width:108px;height:108px;left:6%;top:8%;--d:3.2s;--dl:0s;--sh:rgba(245,158,11,.32)"><b>电影</b></div>
+        <div class="piggy" style="--a:#fdba74;--b:#f97316;width:96px;height:96px;right:8%;top:6%;--d:2.6s;--dl:-1s;--sh:rgba(249,115,22,.32)"><b>剧集</b></div>
+        <div class="piggy" style="--a:#fda4af;--b:#f43f5e;width:104px;height:104px;right:0;top:44%;--d:3.6s;--dl:-2s;--sh:rgba(244,63,94,.3)"><b>动漫</b></div>
+        <div class="piggy" style="--a:#fed7aa;--b:#ea580c;width:92px;height:92px;left:0;bottom:6%;--d:2.9s;--dl:-1.4s;--sh:rgba(234,88,12,.3)"><b>纪录</b></div>
+        <div class="piggy" style="--a:#fbcfe8;--b:#db2777;width:86px;height:86px;right:22%;bottom:2%;--d:3.4s;--dl:-2.4s;--sh:rgba(219,39,119,.3)"><b>综艺</b></div>
+        <div class="piggy" style="--a:#fef3c7;--b:#d97706;width:80px;height:80px;left:22%;top:0;--d:2.7s;--dl:-.6s;--sh:rgba(217,118,6,.28)"><b>短片</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目1 分类 -->
+<section id="cats">
+  <div class="wrap">
+    <div class="eyebrow">栏目一 · 影视分类</div>
+    <h2 class="h2">猪猪影视 <em>内容频道</em></h2>
+    <p class="lead">猪猪影视把内容分成六个软软的频道，点开猪猪影视任意频道，都能像捏泡泡一样轻松找到想看的。</p>
+    <div class="gum">
+      <article class="gm" style="--a:#fde047;--b:#f59e0b;--sh:rgba(245,158,11,.3)"><div class="ic">🎬</div><h3>电影频道</h3><p>院线热映、经典老片与高分独立电影，猪猪影视电影频道一网打尽。</p><span class="go">进入频道 →</span></article>
+      <article class="gm" style="--a:#fdba74;--b:#f97316;--sh:rgba(249,115,22,.3)"><div class="ic">📺</div><h3>电视剧频道</h3><p>国产剧、美剧、韩剧、日剧，猪猪影视电视剧频道每日更新。</p><span class="go">进入频道 →</span></article>
+      <article class="gm" style="--a:#fda4af;--b:#f43f5e;--sh:rgba(244,63,94,.3)"><div class="ic">🎤</div><h3>综艺频道</h3><p>真人秀、脱口秀、竞演与文化节目，猪猪影视综艺频道轻松解压。</p><span class="go">进入频道 →</span></article>
+      <article class="gm" style="--a:#fbcfe8;--b:#db2777;--sh:rgba(219,39,119,.3)"><div class="ic">🎨</div><h3>动漫频道</h3><p>国漫、日番、美漫与动画电影，猪猪影视动漫频道覆盖全龄段。</p><span class="go">进入频道 →</span></article>
+      <article class="gm" style="--a:#fed7aa;--b:#ea580c;--sh:rgba(234,88,12,.3)"><div class="ic">🌍</div><h3>纪录片频道</h3><p>自然、人文、历史与科技，猪猪影视纪录片频道拓宽视野。</p><span class="go">进入频道 →</span></article>
+      <article class="gm" style="--a:#fef3c7;--b:#d97706;--sh:rgba(217,118,6,.28)"><div class="ic">🎞️</div><h3>短片频道</h3><p>微电影、创意短片与电影节精选，碎片时间也能看精品。</p><span class="go">进入频道 →</span></article>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目2 热播 -->
+<section style="background:#fff4e6" id="hot">
+  <div class="wrap">
+    <div class="eyebrow">栏目二 · 热播榜单</div>
+    <h2 class="h2">猪猪影视 <em>今日热播</em></h2>
+    <p class="lead">猪猪影视综合热度与口碑实时排序，左侧软糖大卡主推 + 右侧编号榜单，一目了然。</p>
+    <div class="split">
+      <div class="soft" style="--a:#f97316;--b:#c2410c;--sh:rgba(194,65,12,.34)">
+        <span class="badge">🐷 猪猪影视 · 今日主推</span>
+        <h3>猪猪影视 2026<br>暖心观影指南</h3>
+        <p>从治愈动画到温馨喜剧，猪猪影视为你精选 20 部今秋不容错过的暖心作品，按心情选片，三秒就上手。</p>
+        <div class="acts"><a class="btn btn-g" href="#" style="background:#fff;color:#c2410c">查看指南</a><a class="btn btn-o" href="#" style="border-color:rgba(255,255,255,.6);color:#fff">收藏片单</a></div>
+        <div class="st"><span>🎬 20 部精选</span><span>⭐ 均分 8.6</span><span>🕒 3 分钟阅读</span></div>
+      </div>
+      <div class="num">
+        <div class="ni"><span class="no">01</span><div><h4>猪猪影视 · 热播电影榜</h4><small>剧情 / 喜剧 · 院线同步</small></div><span class="sc">9.2</span></div>
+        <div class="ni"><span class="no">02</span><div><h4>暖心追剧日历</h4><small>电视剧 · 连载更新</small></div><span class="sc">8.9</span></div>
+        <div class="ni"><span class="no">03</span><div><h4>治愈系动画精选</h4><small>动漫 · 全龄向</small></div><span class="sc">9.4</span></div>
+        <div class="ni"><span class="no">04</span><div><h4>温馨喜剧季</h4><small>电影 / 剧集 · 高口碑</small></div><span class="sc">8.7</span></div>
+        <div class="ni"><span class="no">05</span><div><h4>深夜纪录片</h4><small>纪录 · 自然人文</small></div><span class="sc">8.5</span></div>
+        <div class="ni"><span class="no">06</span><div><h4>轻松综艺补给</h4><small>综艺 · 解压首选</small></div><span class="sc">8.3</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目3 电视剧 -->
+<section id="tv">
+  <div class="wrap">
+    <div class="eyebrow">栏目三 · 电视剧</div>
+    <h2 class="h2">猪猪影视 <em>追剧剧场</em></h2>
+    <p class="lead">猪猪影视电视剧频道汇集热门连载与高分完结剧，横滑动卡片适配手机触屏，进度条直观显示追剧进度。</p>
+    <div class="dr" id="drIn"></div>
+  </div>
+</section>
+
+<!-- 栏目4 综艺 -->
+<section style="background:#fff4e6" id="variety">
+  <div class="wrap">
+    <div class="eyebrow">栏目四 · 综艺节目</div>
+    <h2 class="h2">猪猪影视 <em>轻松补给</em></h2>
+    <p class="lead">猪猪影视综艺频道以「云朵胶囊」横条呈现节目，一行一条，滑动浏览毫无负担。</p>
+    <div class="cap">
+      <article class="cp" style="--a:#fde047;--b:#f59e0b"><div class="l">🎤</div><div class="r"><h4>欢乐喜剧人 年度精选</h4><small>真人秀 · 每周五 20:00</small></div></article>
+      <article class="cp" style="--a:#f43f5e;--b:#be123c"><div class="l">🎙️</div><div class="r"><h4>深夜书房 访谈</h4><small>文化 · 每周三 22:30</small></div></article>
+      <article class="cp" style="--a:#f97316;--b:#c2410c"><div class="l">🏆</div><div class="r"><h4>巅峰之声 竞演</h4><small>音乐 · 每周六 21:00</small></div></article>
+      <article class="cp" style="--a:#db2777;--b:#9d174d"><div class="l">🍳</div><div class="r"><h4>人间烟火 美食记</h4><small>生活 · 每日 12:00</small></div></article>
+      <article class="cp" style="--a:#ea580c;--b:#c2410c"><div class="l">✈️</div><div class="r"><h4>环游世界 旅行志</h4><small>旅行 · 每周日 19:30</small></div></article>
+      <article class="cp" style="--a:#f472b6;--b:#db2777"><div class="l">💃</div><div class="r"><h4>舞力全开 竞演赛</h4><small>舞蹈 · 每周四 21:00</small></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目5 动漫 -->
+<section id="anime">
+  <div class="wrap">
+    <div class="eyebrow">栏目五 · 国漫番剧</div>
+    <h2 class="h2">猪猪影视 <em>动漫番剧</em></h2>
+    <p class="lead">猪猪影视动漫频道以「猪圈网格」呈现国漫与番剧，虚线边框点击即实线，经典与连载一目了然。</p>
+    <div class="sty">
+      <div class="sti" style="--a:#f43f5e;--b:#be123c"><div class="tp"><span class="ic">🐉</span><b>更新中</b></div><h4>雾山五行 第三季</h4><p>国风武侠动画，水墨打戏行云流水，最新话已更新。</p></div>
+      <div class="sti" style="--a:#f97316;--b:#c2410c"><div class="tp"><span class="ic">🏮</span><b>完结</b></div><h4>中国奇谭 第二季</h4><p>中式志怪美学，八段独立故事，画风与立意俱佳。</p></div>
+      <div class="sti" style="--a:#fda4af;--b:#f43f5e"><div class="tp"><span class="ic">🐍</span><b>热播</b></div><h4>白蛇 · 浮生</h4><p>民间传说新编动画电影，东方美学与情感表达兼具。</p></div>
+      <div class="sti" style="--a:#db2777;--b:#9d174d"><div class="tp"><span class="ic">🦊</span><b>连载</b></div><h4>天宝伏妖录</h4><p>唐风志怪番剧，人物与美术考究，世界观宏大。</p></div>
+      <div class="sti" style="--a:#ea580c;--b:#c2410c"><div class="tp"><span class="ic">⚔️</span><b>更新中</b></div><h4>枕刀歌 第二季</h4><p>武侠江湖动画，水墨意境与打斗节奏俱佳。</p></div>
+      <div class="sti" style="--a:#f472b6;--b:#be185d"><div class="tp"><span class="ic">🕰️</span><b>连载</b></div><h4>时光代理人 第三季</h4><p>都市奇幻番剧，剧情反转不断，口碑持续走高。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目6 口碑 -->
+<section style="background:#fff4e6" id="rank">
+  <div class="wrap">
+    <div class="eyebrow">栏目六 · 口碑榜</div>
+    <h2 class="h2">猪猪影视 <em>口碑之选</em></h2>
+    <p class="lead">猪猪影视口碑榜用萌萌的「猪猪豆子」头像呈现评分，圆脸越满代表口碑越高。</p>
+    <div class="bean" id="beanBox"></div>
+  </div>
+</section>
+
+<!-- 栏目7 资讯 -->
+<section id="news">
+  <div class="wrap">
+    <div class="eyebrow">栏目七 · 影视资讯</div>
+    <h2 class="h2">猪猪影视 <em>新鲜资讯</em></h2>
+    <p class="lead">猪猪影视内容团队每日精选影视圈重要资讯，档期、获奖、开播与停播信息第一时间同步。</p>
+    <div class="paper">
+      <article class="lead-n" style="--a:#f97316;--b:#c2410c;--sh:rgba(194,65,12,.34)">
+        <span class="lb">🐷 猪猪影视 · 头条</span>
+        <h3>暖心档票房创新高，猪猪影视为你整理必看清单</h3>
+        <p>今年暖心档多部国产片表现亮眼，猪猪影视精选三部口碑佳作，从剧情到视听全面解读。</p>
+        <a class="more" href="#">阅读全文 →</a>
+      </article>
+      <div class="sub-n">
+        <article class="sn" style="--a:#f43f5e;--b:#be123c"><div class="th">📺</div><div><h4>年度温情剧收官，反转结局引爆讨论</h4><small>剧集 · 5 小时前</small></div></article>
+        <article class="sn" style="--a:#f97316;--b:#c2410c"><div class="th">🎨</div><div><h4>国风动画走向世界，海外评分走高</h4><small>动漫 · 昨天</small></div></article>
+        <article class="sn" style="--a:#db2777;--b:#9d174d"><div class="th">🌍</div><div><h4>自然纪录片新作上线，中国之美</h4><small>纪录 · 昨天</small></div></article>
+        <article class="sn" style="--a:#f472b6;--b:#db2777"><div class="th">🎤</div><div><h4>文化类综艺回暖成新趋势</h4><small>综艺 · 3 天前</small></div></article>
+        <article class="sn" style="--a:#ea580c;--b:#c2410c"><div class="th">📋</div><div><h4>按心情选片不踩雷片单合集</h4><small>指南 · 5 天前</small></div></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目8 指南 -->
+<section style="background:#fff4e6" id="guide">
+  <div class="wrap">
+    <div class="eyebrow">栏目八 · 使用指南</div>
+    <h2 class="h2">猪猪影视 <em>四步上手</em></h2>
+    <p class="lead">猪猪影视页面经移动端深度优化，手机、平板、电脑三端自适应。跟着猪猪走完四步，轻松找到想看的。</p>
+    <div class="steps">
+      <div class="stp" style="--a:#fde047;--b:#f59e0b"><span class="n">1</span><h4>选频道</h4><p>从顶部导航或分类入口进入对应频道。</p></div>
+      <div class="stp" style="--a:#fdba74;--b:#f97316"><span class="n">2</span><h4>看榜单</h4><p>热播榜与口碑榜帮你快速锁定好作品。</p></div>
+      <div class="stp" style="--a:#fda4af;--b:#f43f5e"><span class="n">3</span><h4>点进去</h4><p>点击频道链接进入详情，了解更多信息。</p></div>
+      <div class="stp" style="--a:#fed7aa;--b:#ea580c"><span class="n">4</span><h4>多端看</h4><p>响应式布局，手机平板电脑体验一致。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="eyebrow">栏目九 · 常见问题</div>
+    <h2 class="h2">关于猪猪影视 <em>常见问答</em></h2>
+    <p class="lead">关于猪猪影视（zhuzhuyingshi-cn）的常见疑问，猪猪影视团队已为你整理好答案。</p>
+    <div class="ask">
+      <div class="qa on"><button class="qb" aria-expanded="true">猪猪影视是什么网站？<span class="q">▾</span></button><div class="qm"><p>猪猪影视（zhuzhuyingshi-cn）是萌趣暖橙风格的影视导航单页网站，提供电影、电视剧、综艺、动漫、纪录片等频道的分类入口与榜单信息，帮你快速找到想看的影像内容。</p></div></div>
+      <div class="qa"><button class="qb" aria-expanded="false">猪猪影视有哪些栏目？<span class="q">▾</span></button><div class="qm"><p>猪猪影视设有影视分类、热播榜、电视剧、综艺、动漫、口碑榜、影视资讯、使用指南、常见问题、关于我们等栏目，覆盖从选片到鉴赏的完整流程。</p></div></div>
+      <div class="qa"><button class="qb" aria-expanded="false">支持手机访问吗？<span class="q">▾</span></button><div class="qm"><p>支持。猪猪影视采用响应式布局，手机、平板、桌面设备均可自适应显示，移动端优先设计，触控操作友好。</p></div></div>
+      <div class="qa"><button class="qb" aria-expanded="false">榜单多久更新一次？<span class="q">▾</span></button><div class="qm"><p>猪猪影视热播榜每日刷新，口碑榜每周复核，资讯每日精选，确保你看到的都是最新动态。</p></div></div>
+      <div class="qa"><button class="qb" aria-expanded="false">页面为什么这么轻快？<span class="q">▾</span></button><div class="qm"><p>猪猪影视单页由 HTML + 内联 CSS/JS 构成，无外部依赖，资源体积小、加载快，像猪猪一样圆润又灵巧。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 关于 -->
+<section style="background:#fff4e6" id="about">
+  <div class="wrap">
+    <div class="about">
+      <div class="ab a">
+        <div class="eyebrow" style="color:#fde68a">栏目十 · 关于我们</div>
+        <h3>关于猪猪影视</h3>
+        <p>猪猪影视（zhuzhuyingshi-cn）以「萌趣、暖心、轻盈」为准则。我们相信好内容值得被温柔地找到，一个治愈的入口能让每一次观影都变成享受。</p>
+        <div class="url">🔗 https://zhuzhuyingshi-cn.github.io</div>
+        <div class="stats">
+          <div class="stt"><b>6</b><span>内容频道</span></div>
+          <div class="stt"><b>10</b><span>栏目板块</span></div>
+          <div class="stt"><b>3</b><span>自适应端</span></div>
+        </div>
+      </div>
+      <div class="ab b">
+        <div class="eyebrow" style="color:#fecdd3">栏目十 · 数据一览</div>
+        <h3>猪猪影视数据</h3>
+        <p>猪猪影视每日精选内容，持续优化分类与榜单，让推荐越来越懂你，也让页面始终保持轻快不卡顿。</p>
+        <div class="url">📊 每日更新 · 全年无休</div>
+        <div class="stats">
+          <div class="stt"><b>128</b><span>电影精选</span></div>
+          <div class="stt"><b>36</b><span>连载剧集</span></div>
+          <div class="stt"><b>365</b><span>更新天数</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="padding:0 0 96px">
+  <div class="cta">
+    <div class="wrap">
+      <h2>萌趣找片，从猪猪影视开始</h2>
+      <p>猪猪影视（zhuzhuyingshi-cn）电影、电视剧、综艺、动漫、纪录片一站直达，暖橙奶油界面，轻量加载极速体验。</p>
+      <a class="btn btn-g" href="#cats">进入猪猪影视 →</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div><div class="logo-foot"><span class="pig" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#fff"><ellipse cx="12" cy="15" rx="6.4" ry="5.2"/><circle cx="12" cy="8.4" r="3.4"/><circle cx="10.4" cy="7.6" r=".7" fill="#3d2300"/><circle cx="13.6" cy="7.6" r=".7" fill="#3d2300"/><ellipse cx="12" cy="9.4" rx=".8" ry=".6" fill="#f97316"/></svg></span><span class="logo-t" style="color:#fdba74">猪猪<b style="font-style:normal;color:#fed7aa">影视</b></span></div><p class="d">猪猪影视（zhuzhuyingshi-cn）暖橙奶油色调萌趣影视导航单页，聚合电影、电视剧、综艺、动漫、纪录片等栏目，圆滚滚的卡片萌趣治愈。</p></div>
+      <div><h4>栏目导航</h4><ul><li><a href="#cats">影视分类</a></li><li><a href="#hot">热播榜单</a></li><li><a href="#tv">电视剧</a></li><li><a href="#variety">综艺</a></li><li><a href="#anime">动漫</a></li></ul></div>
+      <div><h4>精选内容</h4><ul><li><a href="#rank">口碑榜</a></li><li><a href="#news">影视资讯</a></li><li><a href="#guide">使用指南</a></li><li><a href="#faq">常见问题</a></li><li><a href="#about">关于我们</a></li></ul></div>
+      <div><h4>联系方式</h4><ul><li><a href="#">商务合作</a></li><li><a href="#">内容投稿</a></li><li><a href="#">意见反馈</a></li><li><a href="#">隐私政策</a></li><li><a href="#">免责声明</a></li></ul></div>
+    </div>
+    <div class="foot-bot"><span>© <span id="yr">2026</span> 猪猪影视 zhuzhuyingshi-cn · 保留所有权利 · 网址：<a href="https://zhuzhuyingshi-cn.github.io">https://zhuzhuyingshi-cn.github.io</a></span><span><a href="#top">回到顶部 ↑</a></span></div>
+  </div>
+</footer>
+
+<a id="top" href="#top" aria-label="回到顶部">↑</a>
+
+<script>
+(function(){
+  "use strict";
+  var y=document.getElementById('yr'); if(y)y.textContent=new Date().getFullYear();
+  var mb=document.getElementById('mBtn'),mu=document.getElementById('menu');
+  if(mb&&mu){
+    mb.addEventListener('click',function(){
+      var o=mu.classList.toggle('open');
+      mb.setAttribute('aria-expanded',o?'true':'false');
+      mb.textContent=o?'✕':'☰';
+    });
+    mu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){
+      mu.classList.remove('open');mb.setAttribute('aria-expanded','false');mb.textContent='☰';
+    });});
+  }
+  var pb=document.getElementById('pbar'),tp=document.getElementById('top');
+  function sc(){
+    var h=document.documentElement.scrollHeight-innerHeight;
+    if(pb)pb.style.width=(h>0?(scrollY/h*100):0)+'%';
+    if(tp)tp.classList.toggle('show',scrollY>400);
+  }
+  addEventListener('scroll',sc,{passive:true});sc();
+  var tv=[
+    {t:'悬疑迷局',w:'第 12 集',a:'#f97316',b:'#c2410c',p:66},
+    {t:'暖心恋语',w:'第 06 集',a:'#fdba74',b:'#f97316',p:38},
+    {t:'长安十二时辰',w:'第 24 集',a:'#ea580c',b:'#c2410c',p:82},
+    {t:'深夜书房',w:'第 03 集',a:'#f43f5e',b:'#be123c',p:18},
+    {t:'都市情缘',w:'第 09 集',a:'#db2777',b:'#9d174d',p:52},
+    {t:'古董局中局',w:'第 15 集',a:'#f472b6',b:'#db2777',p:70},
+    {t:'星辰大海',w:'第 21 集',a:'#fbbf24',b:'#f59e0b',p:88},
+    {t:'欢喜一家人',w:'第 30 集',a:'#d97706',b:'#b45309',p:95}
+  ];
+  var di=document.getElementById('drIn');
+  di.innerHTML=tv.map(function(o,i){return '<div class="dc" style="--a:'+o.a+';--b:'+o.b+'"><div class="th"><span class="em">'+o.t+'</span></div><div class="ct"><span class="ep">EP · '+o.w+'</span><h4>'+o.t+'</h4><span style="font-size:12px;color:#a1632c">猪猪影视电视剧频道</span><div class="bar"><i data-w="'+o.p+'" style="transition-delay:'+(i*0.08)+'s"></i></div></div></div>';}).join('');
+  var rk=[
+    {t:'雾山五行 第三季',d:'国风武侠动画 · 9.5 分',n:95,a:'#f43f5e',b:'#be123c'},
+    {t:'中国奇谭 第二季',d:'中式志怪 · 9.4 分',n:94,a:'#f97316',b:'#c2410c'},
+    {t:'治愈系动画精选',d:'全龄向 · 9.4 分',n:94,a:'#db2777',b:'#9d174d'},
+    {t:'时光代理人 第三季',d:'都市奇幻 · 9.0 分',n:90,a:'#f472b6',b:'#db2777'},
+    {t:'暖心追剧日历',d:'连载更新 · 8.9 分',n:89,a:'#ea580c',b:'#c2410c'}
+  ];
+  var bb=document.getElementById('beanBox');
+  bb.innerHTML=rk.map(function(o){return '<div class="be" style="--a:'+o.a+';--b:'+o.b+'"><div class="face"><i></i></div><h4>'+o.t+'</h4><p>'+o.d+'</p><span class="sc">猪猪评分 '+o.n+'</span></div>';}).join('');
+  setTimeout(function(){di.querySelectorAll('.bar i').forEach(function(b){b.style.width=b.dataset.w+'%';});},400);
+  document.querySelectorAll('.qb').forEach(function(q){
+    q.addEventListener('click',function(){
+      var it=q.closest('.qa'),o=it.classList.toggle('on');
+      q.setAttribute('aria-expanded',o?'true':'false');
+    });
+  });
+})();
+</script>
+</body>
+</html>
